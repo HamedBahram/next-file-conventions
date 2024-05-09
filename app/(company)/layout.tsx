@@ -24,9 +24,7 @@ export default function CompanyLayout({
           </nav>
         </div>
 
-        <main className='ml-12 grow rounded-xl bg-gray-50 p-6 dark:bg-gray-900'>
-          {children}
-        </main>
+        <main className='ml-12 grow p-6'>{children}</main>
       </div>
     </section>
   )
