@@ -8,7 +8,7 @@ export default function CompanyLayout({
   return (
     <section className='py-24'>
       <div className='container flex'>
-        <div className='overflow-y-auto border-r border-gray-200 py-6 pr-12'>
+        <div className='overflow-y-auto border-r border-gray-200 py-6 pr-12 dark:border-gray-700'>
           <nav className='flex flex-col'>
             <ul role='list' className='flex flex-1 flex-col gap-y-4'>
               <li>
@@ -24,7 +24,9 @@ export default function CompanyLayout({
           </nav>
         </div>
 
-        <main className='ml-12 grow bg-gray-50 p-6'>{children}</main>
+        <main className='ml-12 grow rounded-xl bg-gray-50 p-6 dark:bg-gray-900'>
+          {children}
+        </main>
       </div>
     </section>
   )
