@@ -1,7 +1,14 @@
 import { sleep } from '@/lib/utils'
+import { notFound } from 'next/navigation'
 
 export default async function Page() {
   await sleep(1000)
+
+  // TODO: This to test the not-found page
+  // const random = Math.random()
+  // if (random > 0.5) {
+  //   notFound()
+  // }
 
   return (
     <section>
